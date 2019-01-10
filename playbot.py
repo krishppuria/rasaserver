@@ -10,9 +10,8 @@ from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
 
 def run(namevalue,serve_forever=True):
-    interpreter = RasaNLUInterpreter("models/nlu/default/current")
-    action_endpoint = EndpointConfig(url="http://0.0.0.0:5055/webhook")
-    agent = Agent.load("models/dialogue", interpreter=interpreter,action_endpoint=action_endpoint)
+    interpreter = RasaNLUInterpreter("./models/nlu/default/current")
+    agent = Agent.load("models/dialogue", interpreter=interprete)
     #print("Your bot is ready to talk! Type your messages here or send 'stop'")
     #while
     responses = agent.handle_text(namevalue)
