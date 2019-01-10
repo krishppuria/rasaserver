@@ -1,2 +1,1 @@
-python -m rasa_core_sdk.endpoint --actions actions
 gunicorn --bind=0.0.0.0 --timeout 600 flask1:app
