@@ -5,8 +5,12 @@ from playbot import run
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=["GET","POST"])
 def welcome():
+    if request.method == "POST":
+	name=request.args.get('user')
+        x=run(name)
+        return render_template('page.html',data=x)
     return render_template('loggin.html')
 
 @app.route('/user')
