@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    x=playbot.run("hello")
+    x=playbot.run("elegibility in bca")
     return render_template('page.html',data=x)
 if __name__ == '__main__':
     app.run(debug=True)
