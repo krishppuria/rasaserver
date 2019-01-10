@@ -1,0 +1,87 @@
+slots:
+  course:
+    type: text
+entities:
+  -course
+actions:
+- utter_pu_details
+- utter_pu_addmissiondocs
+- utter_ask_course
+- utter_pu_eligibility
+- utter_goodbye
+- utter_cheer_up
+- utter_bot
+- utter_pu_contact
+- utter_did_that_help
+- utter_pu_UGCapproval
+- utter_unclear
+- utter_pu_location
+- utter_agree
+- utter_wellcome
+- utter_ask
+- utter_greet
+- action_eligibility
+- action_fee
+intents:
+- pu_eligibility
+- greet
+- goodbye
+- pu_UGCapproval
+- pu_contact
+- pu_location
+- pu_details
+- ask_bot
+- mood_great
+- mood_unhappy
+- user_agree
+- mood_deny
+- pu_addmissiondocs
+templates:
+  utter_agree:
+  - text: Great carry on!
+  utter_ask:
+  - text: How can i Help You ?
+  - text: what can i do for you?
+  utter_ask_course:
+  - text: In which course?
+  utter_bot:
+  - text: I am fine :) !!!
+  - text: Great ;) !!!
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye,See You later !!
+  utter_greet:
+  - text: Hey !!
+  - text: hello!
+  utter_pu_UGCapproval:
+  - text: Poornima university is recognized Under section 22(1) of UGC Act 1956).
+  utter_pu_addmissiondocs:
+  - text: "Documents Required:\n  10th marksheet\n  12th marksheet\n  Transfer certificate\n\
+      \  Migration Certificate\n  Domicile Certificate\n  Six Photograph\n"
+  utter_pu_contact:
+  - text: "Website :www.Poornima.edu.in \nMail-ID :info@poornima.edu.in \nPhone-NO:+91-8875666\
+      \ 617,+91-8875 666 618"
+  utter_pu_details:
+  - text: "Poornima University was established in Jaipur in year 2012.  Poornima University\
+      \ Provides various courses:B.tech,M.Tech,MBA,BBA,BCA,B.Com,BArch,Ph.D .\n"
+  utter_pu_location:
+  - text: "Poornima University is located at :Plot No. IS-2027 to 2031, Ramchandrapura,\
+      \    Sitapura Extension, Jaipur.  Sitapura is better known as the educational\
+      \ hub    of Jaipur with large no of education institutions and students.  It\
+      \ is within    20 minutes drive from the heart of Jaipur city.   \n"
+  utter_unclear:
+  - text: I am not sure what you are aiming for.
+  - text: I am not very sure what you said.
+  - text: "Maybe I didn't understand you properly. \nCould you please reword your\
+      \ question or type your complete query?"
+  - text: I didn't get what you said. Can you please rephrase the query?
+  - text: A little lost. Apologies. Could you rephrase?
+  - text: I've dropped the ball. Could you rephrase?
+  - text: Oops. Signal fuzzy. Could you rephrase?
+  utter_wellcome:
+  - text: "hey!!! \nWelcome to Poornima University\n How can i help You ?"
+  utter_pu_eligibility:
+  - text: "xxxxxxx"
