@@ -8,10 +8,10 @@ app = Flask(__name__)
 @app.route('/', methods=["GET","POST"])
 def welcome():
     if request.method == "POST":
-	name=request.args.post('user')
+        name=request.args.post('user')
         x=run(name)
         return render_template('page.html',data=x)
     return render_template('loggin.html')
-#if __name__ == '__main__':
-    #app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
 
