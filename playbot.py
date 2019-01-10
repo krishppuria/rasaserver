@@ -11,7 +11,7 @@ from rasa_core.utils import EndpointConfig
 
 def run(namevalue,serve_forever=True):
     interpreter = RasaNLUInterpreter("./models/nlu/default/current")
-    agent = Agent.load("models/dialogue", interpreter=interprete)
+    agent = Agent.load("models/dialogue", interpreter=interpreter)
     #print("Your bot is ready to talk! Type your messages here or send 'stop'")
     #while
     responses = agent.handle_text(namevalue)
