@@ -1,1 +1,1 @@
-python -m run.py --enable_api -d models/dialogue -u models/nlu/default/current --debug -o out.log --endpoints endpoints.yml
+gunicorn --bind=0.0.0.0 --timeout 600 flask1:app
