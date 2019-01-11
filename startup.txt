@@ -1,1 +1,1 @@
-python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/current --debug -o out.log --endpoints endpoints.yml
+python -m run.py --enable_api -d models/dialogue -u models/nlu/default/current --debug -o out.log --endpoints endpoints.yml

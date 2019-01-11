@@ -167,7 +167,7 @@ def start_server(input_channels,
     if logger.isEnabledFor(logging.DEBUG):
         utils.list_routes(app)
 
-    http_server = WSGIServer(('0.0.0.0', port), app)
+    http_server = WSGIServer(('https://rasaserver.azurewebsites.net', port), app)
     logger.info("Rasa Core server is up and running on "
                 "{}".format(constants.DEFAULT_SERVER_FORMAT.format(port)))
     http_server.start()
