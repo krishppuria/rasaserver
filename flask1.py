@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,jsonify
 from playbot import run
 app = Flask(__name__)
 @app.route('/')
@@ -8,7 +8,7 @@ def welcome():
 def data():
     name=request.args.get('user')
     x=run(name)
-    return render_template('page.html',data=x)
+    return jsonify({"value":x})
 if __name__ == '__main__':
     app.run(debug=True)
 
